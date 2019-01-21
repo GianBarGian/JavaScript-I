@@ -19,20 +19,34 @@ const example = {
 
 // Write your intern objects here:
 
+ function constructInter (i, n, e, g) {
+  const newObj = {
+    id: i,
+    name: n,
+    email: e,
+    gender: g,
+  }
+  return newObj;
+}
 
+const mitzi = constructInter(1, "Mitzi", "mmelloy0@psu.edu","F"); 
+const kennan = constructInter(2, "kdiben1@tinypic.com", "Kennan","M");
+const kevan = constructInter(3, "kmummery2@wikimedia.org", "Kevan","M");
+const gannie = constructInter(4, "gmartinson3@illinois.edu", "Gannie","M");
+const antonietta = constructInter(5, "adaine5@samsung.com", "Antonietta","F");
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(mitzi.name);
 // Kennan's ID
-
+console.log(kennan.id);
 // Keven's email
-
+console.log(kevan.email);
 // Gannie's name
-
+console.log(gannie.name);
 // Antonietta's Gender
-
+console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
